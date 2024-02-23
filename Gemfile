@@ -5,6 +5,9 @@ ruby '2.6.6'
 #i add this
 gem 'execjs'
 gem 'therubyracer'
+gem 'omniauth', '~> 1.6', '>= 1.6.1'
+gem 'omniauth-google-oauth2'
+gem 'omniauth-rails_csrf_protection'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.11'
@@ -43,4 +46,5 @@ end
 group :production do
   gem 'pg', '~> 0.21' # for Heroku deployment
   gem 'rails_12factor'
+
 end
