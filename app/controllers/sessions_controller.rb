@@ -1,3 +1,4 @@
+#Doing SSO
 class SessionsController < ApplicationController
   # login & logout actions should not require user to be logged in
   skip_before_filter :set_current_user

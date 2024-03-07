@@ -1,4 +1,6 @@
+#Dealing with thing about movie
 class MoviesController < ApplicationController
+  
 
     def show
       id = params[:id] # retrieve movie ID from URI route

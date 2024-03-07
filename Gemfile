@@ -8,6 +8,8 @@ gem 'therubyracer'
 gem 'omniauth', '~> 1.6', '>= 1.6.1'
 gem 'omniauth-google-oauth2'
 gem 'omniauth-rails_csrf_protection'
+gem 'flog', '~> 4.3'
+gem 'reek'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.11'

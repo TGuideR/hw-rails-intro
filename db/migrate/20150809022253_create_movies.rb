@@ -1,13 +1,15 @@
+#Add data to Movie Model
 class CreateMovies < ActiveRecord::Migration
+  # :reek:FeatureEnvy
   def change
-    create_table :movies do |t|
-      t.string :title
-      t.string :rating
-      t.text :description
-      t.datetime :release_date
+    create_table :movies do |table|
+      table.string :title
+      table.string :rating
+      table.text :description
+      table.datetime :release_date
       # Add fields that let Rails automatically keep track
       # of when movies are added or modified:
-      t.timestamps
+      table.timestamps
     end
   end
 end
